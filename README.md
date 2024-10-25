@@ -1,4 +1,4 @@
-# 8. String & char
+# 9. String & char
 
 **String in C#:**
 
