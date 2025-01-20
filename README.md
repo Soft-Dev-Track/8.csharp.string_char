@@ -157,3 +157,6 @@ So, let's resume, we can pass some parameters in the static method **ToString()*
 - CultureInfo : A provider which Changing the localization `CultureInfo.GetCultureInfo("us-US")`
 
 ## Exercices
+
+--- 
+![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3pwZmY0NmswNXB1bThrZ2pkaXo1Y21yZGppbWFwcmJ4dnplcG9hZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ry4xUcotnl63NSNfU3/giphy.gif)
