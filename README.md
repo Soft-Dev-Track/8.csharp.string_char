@@ -77,8 +77,6 @@ int age = 34;
 Console.WriteLine($"I have {money.ToString()} and I am {age.ToString()} years old.");
 ```
 
-![](assets/var-string-char.png)
-
 ## 5.String Interpolation and Special Characters
 
 ```csharp

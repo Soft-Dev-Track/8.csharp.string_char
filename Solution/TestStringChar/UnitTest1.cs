@@ -40,11 +40,11 @@ namespace TestStringChar
             Assert.That(result, Is.EqualTo(true));
         }
 
-        //[Test]
-        //public void Test_FirstNonRepeatingCharacter()
-        //{
-        //    char result = StringChar.Solution.Test_FirstNonRepeatingCharacter("Stress");
-        //    Assert.That(result, Is.EqualTo('t'));
-        //}
+        [Test]
+        public void Test_FirstNonRepeatingCharacter()
+        {
+           char result = StringChar.Solution.Test_FirstNonRepeatingCharacter("Stress");
+           Assert.That(result, Is.EqualTo('t'));
+        }
     }
 }
