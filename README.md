@@ -158,5 +158,73 @@ So, let's resume, we can pass some parameters in the static method **ToString()*
 
 ## Exercices
 
+### 1. Reverse a String
+**Objective**: Write a program that takes a string input from the user and prints it in reverse order.
+- Example: Input: "hello" Output: "olleh".
+
+```csharp
+[Test]
+public void Test_ReversedString()
+{
+    string result = StringChar.Solution.ReversedString("hello");
+    Assert.That(result, Is.EqualTo("olleh"));
+}
+
+[Test]
+public void Test_ReversedString_Exception()
+{
+    var ex = Assert.Throws<ArgumentException>(() => StringChar.Solution.ReversedString(""));
+    Assert.That(ex.Message, Is.EqualTo("Input string must not be empty"));
+}
+``` 
+
+### 2.Count Vowels
+***Objective***: Create a program that counts and prints the number of vowels in a given string.
+- Example: Input: "hello world" Output: "Number of vowels: 3"
+
+```csharp
+[Test]
+public void Test_CountVowels()
+{
+    string result = StringChar.Solution.CountVowels("You are a nice software developer");
+    Assert.That(result, Is.EqualTo($"Number of vowels:{6}"));
+}
+
+[Test]
+public void Test_CountVowels_Exception()
+{
+    var ex = Assert.Throws<ArgumentException>(() => StringChar.Solution.CountVowels(""));
+    Assert.That(ex.Message, Is.EqualTo("Input string must not be empty"));
+}
+```
+
+### 3. Palindrome Check
+**Objective**: Develop a program that checks whether a given string is a palindrome (a string that reads the same forward and backward, ignoring spaces, punctuation, and capitalization).
+
+- Example: Input: "A man a plan a canal Panama" Output: "The string is a palindrome."
+
+```csharp
+[Test]
+public void Test_IsPalindrome()
+{
+    bool result = StringChar.Solution.isPalindrome("Elu par cette crapule");
+    Assert.That(result, Is.EqualTo(true));
+}
+```
+
+### 4.First Non-Repeating Character
+**Objective**: Write a C# program that finds and displays the first non-repeating character in a string. If every character repeats, the program should output a message stating that there are no unique characters.
+
+- Example: Input: "stress" Output: "First non-repeating character is 't'".
+
+```csharp
+[Test]
+public void Test_FirstNonRepeatingCharacter()
+{
+    char result = StringChar.Solution.Test_FirstNonRepeatingCharacter("Stress");
+    Assert.That(result, Is.EqualTo('t'));
+}
+```
+
 --- 
 ![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3pwZmY0NmswNXB1bThrZ2pkaXo1Y21yZGppbWFwcmJ4dnplcG9hZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ry4xUcotnl63NSNfU3/giphy.gif)

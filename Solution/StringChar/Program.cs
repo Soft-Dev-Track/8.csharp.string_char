@@ -1,10 +1,10 @@
-﻿namespace StringChar
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Text.RegularExpressions;
+
+namespace StringChar
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+       
     }
 }
